@@ -1,0 +1,29 @@
+name: MineSpeeder
+main: com.akpwebdesign.bukkit.MineSpeeder.MineSpeeder
+version: ${project.version}
+author: AKPWebDesign
+description: Makes minecarts faster.
+commands:
+   minespeeder:
+      description: Allows the player to control MineSpeeder
+      usage: /minespeeder [set|view]
+      permission: minespeeder.command
+      permission-message: You don't have permission to use this command!
+permissions:
+  minespeeder.*:
+    description: Gives access to all MineSpeeder permissions
+    default: op
+    children:
+      minespeeder.command: true
+  minespeeder.command:
+    description: Use MineSpeeder commands.
+    default: op
+    children:
+      minespeeder.command.speed.set: true
+      minespeeder.command.speed.view: true
+  minespeeder.command.speed.set:
+    description: Set the max minecart speed.
+    default: op
+  minespeeder.command.speed.view:
+    description: View the max minecart speed.
+    default: op
