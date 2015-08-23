@@ -66,30 +66,10 @@
 			<id>kitteh-repo</id>
 			<url>http://repo.kitteh.org/content/groups/public</url>
 		</repository>
-		<repository>
-			<id>deployment-release</id>
-			<url>http://tommy.akpwebdesign.com:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<repository>
-			<id>deployment-snapshot</id>
-			<url>http://tommy.akpwebdesign.com:8081/nexus/content/repositories/snapshots/</url>
-		</repository>
 	</repositories>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://tommy.akpwebdesign.com:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://tommy.akpwebdesign.com:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.bukkit</groupId>
